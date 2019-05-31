@@ -12,7 +12,7 @@ class OReillyBookFactory extends AbstractBookFactory {
     
     /** Return a new OReillyPHPBook instance */
     function makePHPBook() {
-        return new SamsPHPBook();
+        return new OReillyPHPBook();
     }
 
     /** Return a new OReillyNodeJsBook instance */
