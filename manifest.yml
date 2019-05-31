@@ -1,3 +1,0 @@
-applications:
-  - path: ./creational/abstract-factory/php
-    name: booksapp
