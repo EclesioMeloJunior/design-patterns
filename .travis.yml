@@ -12,9 +12,8 @@ script:
 deploy:
   edge: true
   provider: bluemixcloudfoundry
-  username: eclesiomelo.1@gmail.com
-  organization: eclesiomelo.1@gmail.com
-  space: dev
   manifest: manifest.yml
-  password:
-    secure: lJ009l2lItbUlya3uRgmcY6z7ax1v6YBT/uJ0ygZWTN41XkDzUm9qrH3clngTjO0LyjrySGiCSu7OUXXkJoIjymGu4gTJ3l/6rFVh9YY6jBiZB0hX4wUy9YPdzMJXmiUf93sz3xFAOnBmMjGH8KTJzC/+6YB14o0IuuNFjpvkiOua6qqYNW8+/Buj1qcsIyAgKT8DBGlyidhwUVPKSnJl2B0hslOwjybDgNLFToaA/kZEchkgJd5pZUa24niKlSNqtkaETnKd736WFyT11DAviKvw3cQZ5kkQWXa5Ac7tCyVEGb6lVGK1iORdW2Kgf0jpqa2RY5SDMw+UGpB90z9dax86bjUbEHnIPTePGU+3C9Tc5kqzbOtY5tLFqVHiUDtswVCXQnULmqW7pntm9VsG/Y6hSzFChdHfrmTYnpFAUyi/z//Ni7xl6+BnlUYJGP80WvDfYt37iH7ZeWOfOJYYZLPx8pWQXBekx/m4Hxsxe7Xsv2ASbz32+X8gM89V0ug0udaFGIl4dsTE8oey+5XvCnRzfMJccSHaHEPYUEgV+VHV8VnM9x0iPrmlaBtq/a0xxgK+gga/O8bnEScShI2d+MUbpMsd/rO6uMslLVvv+pogoFCuEM5c0DinPnBoqiOmy9s5tgS3jx/bTgkUNoN1DTF2qN16lfUCaBewXaYXXg=
+  username: $BLUEMIX_USER
+  password: $BLUEMIX_PASSWORD
+  organization: $BLUEMIX_ORGANIZATION
+  space: $BLUEMIX_SPACE
