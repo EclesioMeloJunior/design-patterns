@@ -1,7 +1,6 @@
 applications:
-    - path: .
-    name: 'booksapp'
-    memory: 512M
-    instances: 1
-    disk_quota: 1024M
-    
+- path: .
+  memory: 256M
+  instances: 1
+  name: booksapp
+  disk_quota: 1024M
