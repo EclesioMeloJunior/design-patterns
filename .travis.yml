@@ -11,7 +11,7 @@ script:
 - ./vendor/bin/phpunit -c "./phpunit.xml"
 deploy:
   edge: true
-  manifest: manifest.yml
+  manifest: ./manifest.yml
   provider: bluemixcloudfoundry
   manifest: manifest.yml
   username: $BLUEMIX_USER
