@@ -4,7 +4,7 @@ php:
   - '7.1'
   - '7.2'
 before_script:
-  - cd ./creation/abstract-factory/php
+  - cd ./creational/abstract-factory/php
   - composer self-update
   - composer install
 script:
