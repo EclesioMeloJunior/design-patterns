@@ -1,2 +1,2 @@
 applications:
-    name: booksapp
+    - name: booksapp
