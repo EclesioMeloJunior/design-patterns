@@ -10,7 +10,6 @@ before_script:
 script:
 - ./vendor/bin/phpunit -c "./phpunit.xml"
 deploy:
-  edge: true
   provider: bluemixcloudfoundry
   manifest: manifest.yml
   username: $BLUEMIX_USER
