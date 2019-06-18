@@ -33,6 +33,6 @@ class BookTests extends TestCase {
 
         $title = $book->getTitle();
 
-        $this->assertEquals($nomeDoLivro, "PHP");
+        $this->assertEquals($nomeDoLivro, $title);
     }
 }
