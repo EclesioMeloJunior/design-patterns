@@ -9,12 +9,3 @@ before_script:
 - composer dump-autoload -o
 script:
 - ./vendor/bin/phpunit -c "./phpunit.xml"
-deploy:
-  edge: true
-  manifest: ./manifest.yml
-  provider: bluemixcloudfoundry
-  manifest: manifest.yml
-  username: $BLUEMIX_USER
-  password: $BLUEMIX_PASS
-  organization: $BLUEMIX_ORGANIZATION
-  space: $BLUEMIX_SPACE
