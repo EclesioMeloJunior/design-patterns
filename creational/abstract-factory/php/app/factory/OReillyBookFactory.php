@@ -22,7 +22,7 @@ class OReillyBookFactory extends AbstractBookFactory {
 
     function makePHPBookWithName($name) {
        $book = new OReillyPHPBook();
-       $book->setTitle("Algum livro de PHP");
+       $book->setTitle($name);
 
        return $book;
     }
