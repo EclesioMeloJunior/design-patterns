@@ -18,4 +18,8 @@ class OReillyNodeJsBook extends AbstractNodeJsBook {
     function getTitle() {
         return $this->title;
     }
+
+    function setTitle($title) {
+        $this->title = $title;
+    }
 }

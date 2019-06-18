@@ -14,4 +14,11 @@ class SamsBookFactory extends AbstractBookFactory {
     function makeNodeJsBook() {
         return new SamsNodeJsBook();
     }
+
+    function makePHPBookWithName($name) {
+        $book = new SamsPHPBook();
+        $book->setTitle($name);
+ 
+        return $book;
+     }
 }
