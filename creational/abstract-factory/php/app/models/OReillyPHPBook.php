@@ -18,4 +18,8 @@ class OReillyPHPBook extends AbstractPHPBook {
     function getTitle() {
         return $this->title;
     }
+
+    function setTitle($title) {
+        $this->title = $title;
+    }
 }

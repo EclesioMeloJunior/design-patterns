@@ -25,4 +25,14 @@ class BookTests extends TestCase {
         $this->assertInstanceOf(SamsNodeJsBook::class, $book);
     }
 
+    function testSamsPHPNamedBook() {
+        $nomeDoLivro = "LIVRO DE PHP";
+        
+        $bookFactory = new SamsBookFactory();
+        $book = $bookFactory->makePHPBookWithName($nomeDoLivro);
+
+        $title = $book->getTitle();
+
+        $this->assertEquals($nomeDoLivro, $title);
+    }
 }

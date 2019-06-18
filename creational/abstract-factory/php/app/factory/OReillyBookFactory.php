@@ -19,4 +19,11 @@ class OReillyBookFactory extends AbstractBookFactory {
     function makeNodeJsBook() {
         return new OReillyNodeJsBook();
     }
+
+    function makePHPBookWithName($name) {
+       $book = new OReillyPHPBook();
+       $book->setTitle("Algum livro de PHP");
+
+       return $book;
+    }
 }
