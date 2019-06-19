@@ -9,6 +9,3 @@ before_script:
 - composer dump-autoload -o
 script:
 - ./vendor/bin/phpunit -c "./phpunit.xml"
-deploy:
-  provider: firebase
-  token: $FIREBASE_TOKEN
